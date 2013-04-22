@@ -1,0 +1,112 @@
+
+header {
+	.external-bar {
+		top: 80px;
+		position: relative;
+		img {
+			height: 105px;
+			-webkit-transition: margin 0.8s ease-out;
+		  -moz-transition: margin 0.8s ease-out;
+		  -o-transition: margin 0.8s ease-out;
+		}
+		img:hover {
+			cursor:pointer;
+		  margin-left: -10px;
+		  margin-right:10px;
+		}
+		.twitt {
+			border-bottom: 1px solid $social-border;
+		}
+	}
+	nav {
+		top: 150px;
+		position: relative;
+
+	}
+}
+
+.nav-list > li > a {
+	padding:10px 15px 10px 10px;
+	border-bottom: 4px solid transparent;
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover {
+	color: $links;
+	text-shadow: none;
+	background-color: transparent;
+	border-bottom: 4px solid $red;
+}
+
+.nav-list > li > a:hover {
+	background-color: transparent;;
+	color: $hover-text;
+	border-bottom: 4px solid $hover-bar;
+}
+
+.circle {
+	border-radius: 50%;
+	display: inline-block;
+}
+
+#circle-1 {
+	width: $circle1;
+	height: $circle1;
+	background-color: $background-color1;
+	position: absolute;
+	top: $negative-circle-offset;
+	left: 0;
+}
+
+#circle-2 {
+	width: $circle2;
+	height: $circle2;
+	background-color: $background-color2;
+	position: absolute;
+	top: $negative-circle-offset;
+	left: $circle1;
+}
+#circle-3 {
+	width: $circle3;
+	height: $circle3;
+	background-color: $background-color3;
+	position: absolute;
+	top: $negative-circle-offset+$circle2;
+	left: $circle1+$circle4;
+}
+#circle-4 {
+	width: $circle4;
+	height: $circle4;
+	background-color: $background-color4;
+	position: absolute;
+	top: $negative-circle-offset+$circle2+$circle5;
+	left: $circle1;
+}
+#circle-5 {
+	width: $circle5;
+	height: $circle5;
+	background-color: $background-color5;
+	position: absolute;
+	top: $negative-circle-offset+$circle2;
+	left: $circle1;
+}
+#circle-6 {
+	width: $circle6;
+	height: $circle6;
+	background-color: $background-color6;
+	position: absolute;
+	top: $negative-circle-offset+$circle2;
+	left: $circle1+$circle5;
+}
+ @-webkit-keyframes bounce {
+    from, to  {
+      -webkit-animation-timing-function: ease-out;
+    }
+    50% {
+      top: -5px;
+      -webkit-animation-timing-function: ease-in;
+    }
+  }
+
+
+
+

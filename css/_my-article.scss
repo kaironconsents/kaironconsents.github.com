@@ -1,0 +1,8 @@
+
+ul.pdf li:after {
+    content: url('/images/pdficon_large.png');
+
+}
+li, ol {
+	text-decoration: none;
+}
